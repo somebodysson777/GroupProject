@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly Arik Air - West-Africa's leading airline offering domestic, regional and international flights.</title>
+    <link href="https://www.arikair.com/assets/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aa746e5e2a.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+   
+    body{
+        background-image: url(PICS/arik-air-nigeria-VA.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+    
+    .radio-btn{
+        margin: 0 20px;
+    }
+    .radio-btn .btn{
+        margin: 20px 10px 20px 0;
+        box-shadow: none;
+    }
+    .radio-btn .btn::after{
+        content: '';
+        width: 15px;
+        height: 15px;
+        top: -2px;
+        left: -1px;
+        background-color: #fff;
+        position: relative;
+        display: inline-block;
+        border: 3px solid #fff;
+        visibility: visible;
+        border-radius: 50%;
+    }
+    .radio-btn .btn:checked::after{
+        content: '';
+        background-color: #000;
+        transition: 0.5s;
+    }
+    .radio-btn span{
+        color: #fff;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+   
+   
+   nav{
+        background: rgb(132, 151, 168);
+        opacity: 0.8;
+        height: 80px;
+        width: 100%;
+        position: fixed;
+    }
+   nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+    nav ul li a{
+        color: white;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        font-size: medium;
+    }
+    .option{
+            position: relative;
+           
+            line-height: 40px;
+           
+            width: 350px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+            outline: none;
+            overflow: hidden;
+            height: 40px;
+            padding-left: 30px;
+            right: -65px;
+        }
+        .option option{
+            font-size: 20px;
+        }
+        .lastlabel{
+            position: relative;
+            font-size: large;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 85px;
+            top: -41px;
+            color: white;
+            
+        }
+        .firstlabel{
+            color: white;
+            padding-left: 10px;
+            font-size: large;
+            font-size: 14px;
+            position: relative;
+            right: -65px;
+        }
+        .date{
+            color: white;
+            padding-left: 10px;
+            font-size: large;
+            font-size: 14px; 
+            padding-top: 10px;
+            position: relative;
+            right: -65px;
+        }
+        .form-control{
+            width: 350px;
+            display: inline-block;
+            position: relative;
+            right: -65px;
+        }
+        .option1{
+            position: relative;
+           
+           line-height: 40px;
+          
+           width: 200px;
+           border-radius: 6px;
+           padding: 0 22px;
+           font-size: 16px;
+           color: #555;
+           outline: none;
+           overflow: hidden;
+           height: 40px;
+           padding-left: 30px;
+           right: -65px;
+        }
+        .options{
+            position: relative;
+           
+           line-height: 40px;
+          
+           width: 350px;
+           border-radius: 6px;
+           padding: 0 22px;
+           font-size: 16px;
+           color: #555;
+           outline: none;
+           overflow: hidden;
+           height: 44px;
+           padding-left: 30px;
+           right: -5px;
+        }
+        .option2{
+            position: relative;
+           top: -39px;
+           right: -300px;
+           line-height: 40px;
+          
+           width: 200px;
+           border-radius: 6px;
+           padding: 0 22px;
+           font-size: 16px;
+           color: #555;
+           outline: none;
+           overflow: hidden;
+           height: 40px;
+           padding-left: 30px;
+        }
+        .firstlabel1{
+            color: white;
+            padding-left: 10px;
+            font-size: large;
+            font-size: 14px;
+            position: relative;
+            top: -38px;
+            right: -90px;
+        }
+        .firstlabel2{
+            color: white;
+            padding-left: 10px;
+            font-size: large;
+            font-size: 14px;
+            position: relative;
+            top: -76px;
+            right: -325px;
+        }
+        .option3{
+            position: relative;
+           top: -79px;
+           right: -535px;
+           line-height: 40px;
+          
+           width: 200px;
+           border-radius: 6px;
+           padding: 0 22px;
+           font-size: 16px;
+           color: #555;
+           outline: none;
+           overflow: hidden;
+           height: 40px;
+           padding-left: 30px;
+        }
+        button{
+            background-color: rgb(52, 0, 13);
+            padding: 10px 25px;
+            color: white;
+            font-size: medium;
+            outline: none;
+            cursor: pointer;
+            border-radius: 6px;
+            position: relative;
+            top: -85px;
+            right: -640px;
+        }
+        .booking-form-box{
+            background: rgb(132, 151, 168);
+            opacity: 0.8;
+            width: 820px;
+            position: relative;
+            top: 90px;
+            right: -45px;
+            height: 500px;
+        }
+        
+        button:hover{
+            background: blue;
+        }
+        .Covid19{
+            position: relative;
+            background: rgb(51, 192, 222);
+            right: -65px;
+            top: -85px;
+            font-size: large;
+            font-family:'Montserrat', sans-serif;
+        }
+        .alert{
+            display: inline-flex;
+            color: rgb(200, 134, 133);
+           
+            
+            background-color: rgb(242, 222, 222);
+            position: relative;
+            width: 800px;
+            font-size: 12px;
+            border-radius: 5px;
+            top: -75px;
+            right: -50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-family:'Montserrat', sans-serif;
+        }
+        .logo{
+            position: relative;
+            right: -40px;
+            padding-top: 10px;
+        }
+        .flightbtn{
+            color: white;
+            outline: none;
+            font-size: medium;
+            font-family:'Montserrat', sans-serif;
+            position: relative;
+            border-radius: none;
+            background-color: rgb(52, 0, 13);
+            top: 234px;
+            right: -45px;
+        }
+        .flightbtn:hover{
+            background-color: rgb(52, 0, 13);
+        }
+        .checkinbtn:hover{
+            background-color: rgb(52, 0, 13);
+        }
+        .affinitybtn:hover{
+            background-color: rgb(52, 0, 13);
+        }
+        .bookingbtn:hover{
+            background-color: rgb(52, 0, 13);
+        }
+        .checkinbtn{
+            color: white;
+            outline: none;
+            font-size: medium;
+            font-family:'Montserrat', sans-serif;
+            position: relative;
+            border-radius: none;
+            background: rgb(132, 151, 168);
+            opacity: 0.8;
+            top: 138px;
+            right: -433px;
+        }
+        .affinitybtn{
+            color: white;
+            outline: none;
+            font-size: medium;
+            font-family:'Montserrat', sans-serif;
+            position: relative;
+            border-radius: none;
+            background: rgb(132, 151, 168);
+            opacity: 0.8;
+            top: 90px;
+            right: -660px;
+        }
+        .bookingbtn{
+            color: white;
+            outline: none;
+            font-size: medium;
+            font-family:'Montserrat', sans-serif;
+            position: relative;
+            border-radius: none;
+            background: rgb(132, 151, 168);
+            opacity: 0.8;
+            top: 186px;
+            right: -185px;
+
+        }
+        .writings{
+            width: 100%;
+            background-color: white;
+            display: inline-block;
+            height: 350px;
+        }
+        .searhlogo{
+           position: relative;
+           right: -45px;
+        }
+        .search{
+            position: relative;
+            font-size: medium;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            right: -265px;
+            top: 35px;
+        }
+        .select{
+            position: relative;
+            font-size: medium;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            right: -624px;
+            top: 10px;
+        }
+        .book{
+            position: relative;
+            font-size: medium;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            right: -980px;
+            top: -17px;
+        }
+        .searchdiv{
+            display: inline-block;
+            word-wrap: normal;
+            width: 250px;
+            text-align: center;
+            position: relative;
+            right: -170px;
+        }
+        .searchbox{
+            font-family: 'Montserrat', sans-serif;
+            font-size: small;
+        }
+        .selectdiv{
+            display: inline-block;
+            word-wrap: normal;
+            width: 250px;
+            text-align: center;
+            position: relative;
+            right: -272px;
+            top: -18px;
+        }
+        .selectbox{
+            font-family: 'Montserrat', sans-serif;
+            font-size: small;
+        }
+        .bookdiv{
+            display: inline-block;
+            word-wrap: normal;
+            width: 250px;
+            text-align: center;
+            position: relative;
+            right: -370px;
+            top: 1px;
+        }
+        .bookbox{
+          
+            font-family: 'Montserrat', sans-serif;
+            font-size: small;
+        
+        }
+        .vidbox{
+            display: inline-block;
+            width: 1300px;
+            height: 700px;
+            background: #162c4b;
+            opacity: 0.8;
+        }
+        .destinationbox{
+            display: inline-block;
+            width: 1300px;
+            background: white;
+            height: 800px;
+        }
+        .imgwrapper{
+            width: 1300px;
+            height: auto;
+        }
+        .box{
+            width: 27%;
+            float: left;
+            overflow: hidden;
+        }
+        .box img{
+            height: 200px;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+       .grid1{
+           display: inline-flex;
+           height: 100px;
+           position: relative;
+       }
+       .col-sm-6-item{
+           width: 200px;
+           height: 250px;
+       }
+       .imgwrapper:hover{
+           transform: scale(1.0);
+
+       }
+       .footer{
+        display: inline-block;
+            width: 1300px;
+            height: 400px;
+            background: #162c4b;
+            opacity: 0.8;
+            position: relative;
+            top: -600px;
+       }
+       #rowone{
+        display: inline-flex;
+        position: relative;
+        right: -55px;
+        margin-top: 120px;
+       }
+       #rowtwo{
+        display: inline-flex;
+        position: relative;
+        right: -55px;
+        margin-top: 50px;
+       }
+       .town{
+        margin: 20px;   
+       }
+
+        .town img{
+        transition: all 1s;
+       }
+
+        .town img:hover{
+        transform: scale(1.1);
+       }
+
+        .quarter{
+        width: 250px;
+        background-color: #084f7e;
+        height: 50px;
+        top: 30px;
+        margin: 0px;
+        position: relative;
+        margin-top: -100px;
+        opacity: 0.8;
+       }
+
+        .quarter p{
+        font: bolder;
+        color: white;
+        position: relative;
+        left: 40%;
+        bottom: -40%;
+       }
+
+       .fifthpage{
+    height: 350px;
+    width: 1300px;
+    background-color: #07253f;
+}
+
+.fifthpage #almost{
+    width: 300px;
+    font-size: 120%;
+    position: relative;
+    right: -45px;
+    top: 70px;
+    line-height: 1.6em;
+}
+
+.fifthpage #almost p{
+    color: rgba(255, 255, 255, 0.63);
+}
+
+#btn{
+    position: relative;
+    left: 30%;
+    bottom: 40%;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    background-color: #5bc0de;
+    width: 280px;
+    color: white;
+}
+
+#btn:hover{
+     color: #26697e;
+}
+
+#contact{
+    position: relative;
+    bottom: 65%;
+   
+}
+
+#contact h4{
+    position: relative;
+    margin-left: 75%;
+    color: white;
+    font-size: 1.2em;
+}
+
+#call{
+    position: relative;
+    margin-left: 75%;
+    color: rgba(255, 255, 255, 0.63);
+    line-height: 1.4em;
+    width: 250px;
+    font-size: 120%;
+}
+
+footer{
+    background-color:#0a3152;
+    height: 100px;
+    width: 1300px;
+}
+
+footer div{
+    margin-left: 100px;
+    position: relative;
+    top: 40px;
+}
+
+footer div p{
+    margin-top: 0;
+    font-size: 1.4em;
+    color:  rgba(255, 255, 255, 0.63);
+
+}
+       
+    </style>
+</head>
+<body>
+    <nav>
+        
+        </label>
+        <label class="logo"><img src="PICS/logo.png" alt="" style="right: -20px;"></label>
+        <ul>
+          <li><a class="#" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a  href="#"><i class="fas fa-file-pdf"></i> Careers</a></li>
+          <li><a href="#"><i class="fas fa-phone-alt"></i> Talk To Us</a></li>
+          </ul>
+    </nav>
+    
+    <div>
+        <button class="flightbtn"><b><i class="fas fa-plane"></i> FLIGHT</b></button>
+    </div>
+    <div>
+        <button class="bookingbtn"><b><i class="fas fa-ticket-alt"></i> MANAGE BOOKINGS</b></button>
+    </div>
+    <div>
+        <button class="checkinbtn"><b><i class="fas fa-briefcase"></i> ONLINE CHECK-IN</b></button>
+    </div>
+    <div>
+        <button class="affinitybtn"><b><i class="fad fa-circle"></i> AFFINITY WINGS </b></button>
+    </div>
+    <div class="booking-form-box">
+        <h4 style="color: white; font-size: large; padding-left: 20px;"><b>BOOK FLIGHT TICKETS NOW</b></h4>
+               
+        <div class="radio-btn">
+            <input type="radio" class="btn" name="check" checked><span>ROUND TRIP</span>
+            <input type="radio" class="btn" name="check"><span>ONE WAY</span>
+        </div>
+
+        
+        <label class="firstlabel">FLYING FROM</label><br>
+        <select class="option" name="Subject">
+            <option disabled="disabled" selected="selected"><img src="PICS/download (8).png" width="15px" height="15px"> FROM</option>
+            
+            <option>NIGERIA</option>
+            <option>LAGOS(LOS)</option>
+            <option>ABUJA(ABV)</option>
+            <option>PORT HARCOURT(PHC)</option>
+            <option>BENIN(BNI)</option>
+            <option>ILORIN(ILR)</option>
+            <option>JOS(JOS)</option>
+            <option>MAIDUGURI(MUI)</option>
+            <option>YOLA(YOL)</option>
+        </select>
+        <label class="lastlabel">FLYING TO</label>
+        <select class="options" name="Subject">
+            <option disabled="disabled" selected="selected">TO</option>
+            
+            <option>NIGERIA</option>
+            <option>LAGOS(LOS)</option>
+            <option>ABUJA(ABV)</option>
+            <option>PORT HARCOURT(PHC)</option>
+            <option>BENIN(BNI)</option>
+            <option>ILORIN(ILR)</option>
+            <option>JOS(JOS)</option>
+            <option>MAIDUGURI(MUI)</option>
+            <option>YOLA(YOL)</option>
+        </select>
+            
+
+            <div class="input-grp">
+                <label class="date">DEPARTURE DATE</label><br>
+            <input type="date" class="form-control select-date">
+            </div>
+
+            <label class="firstlabel">ADULT</label><br>
+        <select class="option1" name="Subject">
+            <option disabled="disabled" selected="selected">ADULT</option>
+            
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+            
+        <label class="firstlabel1">CHILD</label><br>
+        <select class="option2" name="Subject">
+            <option disabled="disabled" selected="selected">CHILD</option>
+            
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+
+        <label class="firstlabel2">INFANT</label><br>
+        <select class="option3" name="Subject">
+            <option disabled="disabled" selected="selected">INFANT</option>
+            
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+           
+        </div>
+    </div>
+       
+    </div>
+    <div class="Flight-search">
+        <button class="Flight-search"><b>FLIGHT SEARCH</b></button>
+    </div>
+
+    <div>
+        <button class="Covid19"><b>Covid19 Flight Resumption: Passenger Info</b></button>
+    </div>
+   <div class="alert">
+            <marquee behavior="scroll" direction="left">
+                  We are reintroducing flights from Abuja to Maiduguri effective May 10, 2021. Flights operate on Mondays, Wednesdays, Fridays and Sundays. Customers in Lagos can also connect Maiduguri via Abuja.
+            </marquee>
+        </div>
+    <div class="writings">
+       <img class="searchlogo" src="PICS/search.png" alt="" width="100px" height="100px" style="right: -250px; position: relative; top: 8px;">
+       <img src="PICS/cart.png" alt="" width="115px" height="115px" style="right: -489px; top: 8px; position: relative;">
+       <img src="PICS/creditcardd.png" alt="" width="105px" height="105px" style="top: 8px; position: relative; right: -720px;">
+       <div><h4 class="search"><b>SEARCH</b></h4></div>
+       <div><h4 class="select"><b>SELECT</b></h4></div>
+       <div><h4 class="book"><b>BOOK</b></h4></div>
+       <div class="searchdiv"><p class="searchbox"><b>Search for flights to a destination of your choice within Nigeria, Ghana, Liberia and Senegal.</b></p></div>
+       <div class="selectdiv"><p class="selectbox"><b>Flights are scheduled for your comfort convenience.</b></p></div>
+       <div class="bookdiv"><p class="bookbox"><b>Book your flights and pay online with an option to book on-hold and pay later.</b></p></div>
+       
+        
+       
+    </div>
+
+   
+    <hr width="200px" color="rgb(52, 0, 13)" style="position: relative; top: -300px; right: 157px; height: 3px;">
+    <hr width="200px" color="rgb(52, 0, 13)" style="position: relative; top: -320px; right: -196px; height: 3px;">
+    <div class="vidbox">
+        <h3 class="bestexperience" style="position: relative; color: white; font-size: xx-large; right: -400px; top: 40px;"><b>GET THE BEST EXPERIENCE</b></h3>
+        <iframe width="560" height="500" style="position: relative; right: -130px; top: 55px;" src="https://www.youtube.com/embed/0yqzOZKxOmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="PICS/9.jpg" width="400px" height="500px" style="position: relative; right: -126px; top: -191px;" alt="">
+    </div>
+    <div class="destinationbox">
+        <h3 class="destination" style="position: relative; color: #07253f; font-size: xx-large; right: -490px; top: 40px;"><b>TOP DESTINATIONS</b></h3>
+        <div id="rowone">
+            <div class="town"><img src="PICS/Destinations-Abuja-2.jpg" alt="" width="250px" height="200px">
+                <div class="quarter"><p>ABUJA</p></div>
+            </div>
+            <div class="town"><img src="PICS/Destinations-Lagos.jpg" alt="" width="250px" height="200px">
+                <div class="quarter"><p>LAGOS</p></div>
+            </div>
+            <div class="town"><img src="PICS/Destinations-Owerri.jpg" alt="" width="250px" height="200px">
+                <div class="quarter"><p>OWERRI</p></div>
+            </div>
+            <div class="town"><img src="PICS/tour8.jpg" alt="" width="250px" height="200px">
+                <div class="quarter"><p>IBADAN</p></div>
+            </div>
+        </div>
+        <div id="rowtwo">
+            <div class="town"><img src="PICS/Destinations-Ilorin-2.jpg" alt="" width="250px" height="200px"
+                ><div class="quarter"><p>ILLORIN</p></div>
+            </div>
+            <div class="town"><img src="PICS/Destinations-Jos.jpg" alt="" width="250px" height="200px">
+                <div class="quarter"><p>JOS</p></div>
+            </div>
+            <div class="town"><img src="PICS/Destinations-Yola.jpg" alt="" width="250px" height="200px">
+                <div class="quarter"><p>YOLA</p></div>
+            </div>
+            <div class="town"><img src="PICS/Destinations-Kano.jpg" alt="" width=250px" height="200px">
+                <div class="quarter"><p>KANO</p></div>
+            </div>
+        </div>
+       </div>
+       
+       <div class="fifthpage">
+        <div id="almost">
+            <img src="PICS/logo.png" alt="" width="200px" height="70px">
+            <p>Book flights to and from Nigeria & West Africa with Arik Air, West-Africa's leading airline offering domestic, regional and international flights..</p>
+        </div>
+    
+            <button id="btn">Arik Air Terms & Conditions</button>
+            
+            <div id="contact">
+                <h4>CONTACT US</h4>
+                <div id="call">
+                   <p><img src="https://img.icons8.com/dotty/80/ffffff/phone-book.png"height="50px"><strong> Head Office: </strong>Arik Aviation Centre, Muritala Muhammed Airport (Domestic Wing), Ikeja, Lagos</p>
+                  <p><img src="https://img.icons8.com/android/24/ffffff/phone-disconnected.png"/>  <strong>092 131 247</strong></p>
+                </div>
+            </div>
+    </div>
+    
+    <footer>
+           <div>
+              <p>Copyright © 2018 Arik Air Limited. All Rights Reserved</p>
+           </div>
+    </footer>
+    </div>
+</body>
+</html>
